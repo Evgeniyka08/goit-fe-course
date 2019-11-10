@@ -97,7 +97,7 @@ html {
 
 .btn-title {
   position: absolute;
-  width: 1600px;
+  width: 1170px;
   margin: 0 auto;
   height: 700px;
   left: 50%;
@@ -120,13 +120,13 @@ html {
 
 .control-left {
   padding-right: 0.25rem;
-  left: 245px;
+
   z-index: 100;
   opacity: 0.65;
 }
 
 .control-right {
-  right: 245px;
+  right: 30px;
   z-index: 101;
   opacity: 0.65;
 }
