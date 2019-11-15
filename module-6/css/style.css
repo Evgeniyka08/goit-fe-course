@@ -242,7 +242,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0;
+  opacity: 1;
 }
 
 
@@ -265,13 +265,10 @@ body {
 }
 
 
-
 .footer_info {
   font-size: 14px;
   color: #333333;
 }
-
-
 
 .footer {
   display: flex;
