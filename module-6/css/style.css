@@ -173,7 +173,6 @@ body {
   width: 380px;
   height: 470px;
   background-color: #95e1d3;
-
 }
 
 .img_wrapper {
@@ -185,21 +184,13 @@ body {
   transition-timing-function: linear;
 }
 
-
 .img_wrapper:hover {
   transition-property: transform;
   transition-duration: 200ms;
   transition-timing-function: linear;
   transform: translate(-10px, -10px);
-
-}
-
-.img_opacity {
-  opacity: 0;
-}
-
-.img_opacity:hover {
-  opacity: 0.9;
+  cursor: pointer;
+  opacity: 0, 9;
 }
 
 .img_bg {
@@ -211,30 +202,17 @@ body {
   width: 380px;
   top: 0;
   left: 0;
-  background: linear-gradient(to top, #fce38a, #f38181);
+  background: linear-gradient(to top, rgba(252, 227, 138, .9), rgba(243, 129, 129, .9));
+  opacity: 0;
 }
 
-
-
-
-
-
-
-
-
-
-.social_icons_wrpper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
+.img_bg:hover {
   opacity: 1;
-  justify-content: center;
-  align-items: center;
 }
 
-
+.img_bg:hover .social_icon {
+  opacity: 1;
+}
 
 .social_icon {
   display: flex;
@@ -244,17 +222,29 @@ body {
   width: 56px;
   background-color: #fce38a;
   margin-left: 1px;
-  transition-property: background-color;
-  transition-duration: 200ms;
   transition-timing-function: linear;
+
 }
 
 .social_icon:hover {
   transition-property: background-color;
-  transition-duration: 200ms;
   transition-timing-function: linear;
   background-color: #95e1d3;
+  transition-duration: 200ms;
+
 }
+
+.social_icons_wrpper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
 
 .team_member_info {
   text-align: center;
