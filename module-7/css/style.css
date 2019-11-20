@@ -1,4 +1,15 @@
 @font-face {
+  font-family: "Kanit";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Kanit italic"), local("Kanit itaalic"),
+    url("../fonts/kanit-v5-latin-italic.woff") format("woff"),
+    url("../fonts/kanit-v5-latin-italic.woff2") format("woff2")
+}
+
+
+
+@font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
@@ -23,16 +34,9 @@
   src: local('Roboto Slab Regular'), local('RobotoSlab Regular'),
     url('../fonts/roboto-slab-v9-latin-regular.woff2') format('woff2'),
     url('../fonts/roboto-slab-v9-latin-regular.woff') format('woff');
+
 }
 
-@font-face {
-  font-family: 'Kanit italic';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Kanit italic'), local ('Kanit italic'),
-    url('../fonts/kanit-v5-latin-italic.woff') format('woff2'),
-    url('../fonts/kanit-v5-latin-italic.woff2') format('woff2');
-}
 
 html {
   font-size: 14px;
@@ -60,7 +64,7 @@ body {
   overflow: hidden;
 }
 
-.container {
+.container_navigation {
   width: 1050px;
   margin: 0 auto;
   display: flex;
@@ -74,8 +78,6 @@ body {
   align-items: center;
 }
 
-
-
 .menu {
   display: flex;
   width: 490px;
@@ -86,7 +88,7 @@ body {
   flex-wrap: wrap;
 }
 
-.menu_list {
+.menu_item {
   font-family: Montserrat, sans-serif;
   text-transform: uppercase;
   font-size: 14px;
@@ -102,13 +104,16 @@ a:focus {
   color: #fed136;
 }
 
+.container {
+  width: 1050px;
+  margin: 0 auto;
+}
 
 .title,
 .contact_title {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", "Arial", sans-serif;
-
   text-align: center;
   font-size: 40px;
   line-height: calc(29/24);
@@ -203,14 +208,14 @@ a:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 950px;
+  width: 100%;
+  height: 1000px;
   margin: 0;
   background-color: #222222;
   background-image: url("../img/Map Image.png");
   background-repeat: no-repeat;
   background-position: right;
-  padding-top: 110px;
-
+  background-size: 60%;
 }
 
 .contacts_form_container {
@@ -226,26 +231,30 @@ a:focus {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 445px;
+  height: 216px;
 
 }
 
 .contacts_form_user_info {
-  width: 455px;
-  height: 54px;
+  height: 43px;
   border-radius: 7px;
+  padding: 7px;
+
 }
 
 
 
 .user_message {
-  width: 455px;
-  height: 214px;
+  width: 429px;
+  height: 200px;
   border-radius: 7px;
-
+  padding: 7px;
 }
 
 .contacts_form_user_message::placeholder,
-.contacts_form_user_info::placeholder .user_message::placeholder {
+.contacts_form_user_info::placeholder,
+.user_message::placeholder {
   font-family: Montserrat, sans-serif;
   text-transform: uppercase;
   font-weight: 800;
@@ -269,18 +278,12 @@ input[name="user_name"]:focus:valid {
   border: #0fa316 solid 3px;
   transition: border 0.4s;
   border-radius: 7px;
-
-
 }
 
-
-
 .contacts_form_button {
-
   width: 240px;
   height: 68px;
-  align-self: center;
-  margin-top: 50px;
+  margin: 50px 350px;
   border: none;
   border-radius: 7px;
   background: #fed136;
