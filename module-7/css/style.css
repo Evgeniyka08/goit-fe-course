@@ -2,7 +2,7 @@
   font-family: "Kanit";
   font-style: italic;
   font-weight: 400;
-  src: local("Kanit italic"), local("Kanit itaalic"),
+  src: local("Kanit italic"), local("Kanit italic"),
     url("../fonts/kanit-v5-latin-italic.woff") format("woff"),
     url("../fonts/kanit-v5-latin-italic.woff2") format("woff2")
 }
