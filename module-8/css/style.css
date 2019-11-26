@@ -46,7 +46,13 @@ html {
   box-sizing: inherit;
 }
 
-
+.conteiner {
+  min-width: 320px;
+  max-width: 747px;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+}
 
 .bg-conteiner {
   width: 100%;
@@ -258,7 +264,7 @@ html {
 
 @media screen and (min-width: 768px) {
 
-  .container {
+  .conteiner {
     min-width: 748px;
     max-width: 768px;
     margin: 0 auto;
@@ -343,7 +349,7 @@ html {
 }
 
 @media screen and (min-width: 940px) {
-  .container {
+  .conteiner {
     min-width: 920px;
     max-width: 940px;
     margin: 0 auto;
