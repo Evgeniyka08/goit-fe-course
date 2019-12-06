@@ -34,6 +34,10 @@
     url("../fonts/montserrat-v14-latin-700.woff2") format("woff2")
 }
 
+html {
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
@@ -217,7 +221,12 @@
   cursor: pointer;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+
+  .container-fluid {
+    background-image: url(../img/VectorObjecttab.png);
+  }
+
   .page-header {
     width: 670px;
     height: 40px;
@@ -248,7 +257,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 500px;
+    /* width: 500px; */
     margin: 0 auto;
   }
 
@@ -284,13 +293,19 @@
   }
 }
 
-@media(min-width: 960px) {
+@media screen and (min-width: 960px) {
+
+  .container-fluid {
+    background-image: url(../img/VectorObjectdt.png);
+  }
+
   .page-header {
-    width: 942px;
+    max-width: 942px;
   }
 
   .partner-set {
-    width: 942px;
+    max-width: 942px;
+    margin: 0;
   }
 
   .partner:not(:last-child) {
