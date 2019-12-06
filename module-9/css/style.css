@@ -44,9 +44,6 @@ html {
   box-sizing: inherit;
 }
 
-
-
-
 .container-fluid {
   height: 540px;
   padding-top: 20px;
@@ -74,8 +71,6 @@ html {
   margin-top: 0;
   padding: 0;
 }
-
-
 
 .enter-menu-item {
   font-family: "Montserrat", sans-serif;
@@ -257,7 +252,6 @@ html {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* width: 500px; */
     margin: 0 auto;
   }
 
@@ -305,7 +299,7 @@ html {
 
   .partner-set {
     max-width: 942px;
-    margin: 0;
+
   }
 
   .partner:not(:last-child) {
