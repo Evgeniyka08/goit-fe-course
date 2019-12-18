@@ -1,0 +1,43 @@
+.text {
+  font-family: $main-font-steck;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: $text-color;
+}
+
+.title {
+  font-family: $secondary-font;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-family: 'Kaushan Script', 'Arial', 'sans-serif';
+  font-weight: 400;
+}
+
+.site-nav__link,
+.form-feedback__button-submit,
+.button--transparent {
+  font-family: $secondary-font;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: $link-color;
+}
+
+.team-card__description,
+.form-feedback__email-submit::placeholder {
+  margin: 0;
+  font-family: $main-font-steck;
+  font-weight: 300;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.site-footer__description,
+.site-footer__link {
+  margin: 0;
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 14px;
+}

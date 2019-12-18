@@ -1,0 +1,44 @@
+.form-feedback__email-submit {
+  color: $placeholder-color;
+  height: 40px;
+  width: 230px;
+  text-indent: 12px;
+}
+
+.form-feedback__email-submit::placeholder {
+  color: $placeholder-color;
+}
+
+.form-feedback__button-submit,
+.button--transparent {
+  font-weight: 700;
+  width: 162px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.form-feedback {
+  height: fit-content;
+  width: fit-content;
+  justify-self: flex-end;
+  display: grid;
+  grid-template-columns: 230fr 150fr;
+}
+
+.form-feedback__button-submit {
+  width: 150px;
+  height: 40px;
+  font-weight: 700;
+  color: $link-color;
+  background-color:$services-icon-color;
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $secondary-color;
+    color: #e88383;
+    transition: background 0.6s linear, color 0.6s linear;
+  }
+}

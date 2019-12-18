@@ -1,0 +1,28 @@
+.site-logo {
+  margin-top: 30px;
+
+  &:hover,
+  &:focus {
+    border-bottom: 3px solid $secondary-color;
+    padding-bottom: 12px;
+  }
+}
+
+.site-logo,
+.site-logo__img {
+  width: 90px;
+  height: 24px;
+  fill: $link-color;
+}
+
+.site-logo:hover .site-logo__img,
+.site-logo:focus .site-logo__img {
+  fill: $secondary-color;
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus {
+  color: $secondary-color;
+  border-bottom: 3px solid $secondary-color;
+  padding-bottom: 12px;
+}

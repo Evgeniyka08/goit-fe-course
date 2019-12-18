@@ -1,0 +1,32 @@
+.site-footer {
+  display: grid;
+  grid-template-columns: 297fr 380fr;
+  grid-column-gap: 523px;
+  align-content: center;
+  height: 60px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.site-footer__description,
+.site-footer__link {
+  margin: 0;
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.site-footer__description {
+  color: $title-color;
+  height: fit-content;
+  width: 297px;
+  line-height: 40px;
+}
+
+.site-footer__link {
+  color: $main-color;
+
+  &:hover,
+  &:focus {
+    color: $secondary-color;
+  }
+}
