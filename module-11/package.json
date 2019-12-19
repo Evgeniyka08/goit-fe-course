@@ -9,7 +9,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://Evgeniyka08.github.io/goit-fe-course",
+  "homepage": "https://github.com/Evgeniyka08/goit-fe-course.git",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Evgeniyka08/goit-fe-course.git"
