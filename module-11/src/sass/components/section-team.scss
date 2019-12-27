@@ -26,7 +26,6 @@
 }
 
 .section-team__title::after {
-  /* margin-bottom: 60px; */
   display: block;
   background-color: $main-color;
   width: 60px;
@@ -44,6 +43,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 30px;
+  @extend %list;
 }
 
 .team-card {
@@ -87,7 +87,6 @@
 
 .team-card__img {
   position: absolute;
-  transition: opacity 0.4s linear, -webkit-transform 0.4s linear;
   transition: transform 0.4s linear, opacity 0.4s linear;
 }
 
@@ -110,6 +109,7 @@
   background-color: #fce38af1;
   cursor: pointer;
   position: relative;
+  @extend %list;
 
   &:hover,
   &:focus {

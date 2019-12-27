@@ -1,12 +1,10 @@
-/*
- * Все паршалы импортировать в этот файл
- */
 @import 'helpers/variables';
+@import 'helpers/placeholders';
+
+/*base styles*/
 @import 'normalize';
 @import 'base';
 /* components */
-@import 'components/link';
-@import 'components/list';
 @import 'components/container.scss';
 @import 'components/button.scss';
 @import 'components/container-bg.scss';
@@ -17,5 +15,4 @@
 @import 'components/section-welcome';
 @import 'components/section-team';
 @import 'components/site-footer';
-@import 'components/site-header';
 @import 'components/text';
