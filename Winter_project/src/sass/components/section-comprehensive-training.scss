@@ -1,0 +1,224 @@
+.comprehensive-training {
+  margin-bottom: 50px;
+  background-image: url(../../images/fotos/Shape1mob.png);
+  background-size: 100% 526px;
+  background-repeat: no-repeat;
+
+  &__title {
+    margin: 0 0 30px 0;
+    font-size: 1.429rem;
+    line-height: 2.071rem;
+    font-weight: 800;
+  }
+
+  &__paragraph {
+    margin: 0 0 36px 0;
+    font-size: 1.071rem;
+    line-height: 1.429rem;
+    font-weight: 700;
+
+    &--grey {
+      color: $primary-grey-color;
+    }
+
+    &--orange {
+      color: $primary-orange-color;
+    }
+  }
+
+  &__button {
+    @extend %button;
+    display: block;
+    margin: 0 auto 36px;
+    height: 44px;
+    padding: 0 12px;
+    background-color: $primary-orange-color;
+    font-size: 0.7857rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 86px;
+  }
+
+  &-group {
+    @extend %list;
+
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__item-svg {
+      position: relative;
+      fill: $primary-orange-color;
+      width: 30px;
+      height: 36px;
+    }
+
+    &__item-svg--wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      flex: 0 0 56px;
+      height: 56px;
+      border: 2px solid $primary-orange-color;
+      border-right: none;
+      margin-right: 12px;
+
+      &::before,
+      &::after {
+        display: inline-block;
+        right: 0;
+        position: absolute;
+        width: 2px;
+        height: 10px;
+        content: '';
+        background: $primary-orange-color;
+      }
+
+      &::before {
+        top: 0;
+      }
+
+      &::after {
+        bottom: 0;
+      }
+    }
+
+    &__item-text {
+      display: inline-block;
+      margin: 0;
+      font-size: 0.9286rem;
+      font-weight: 700;
+      line-height: 1.429rem;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .comprehensive-training {
+    &-group {
+      &__item {
+        &:not(:last-child) {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .comprehensive-training {
+    background-image: url(../../images/fotos/Shape1tab.png);
+    background-size: 100% 370px;
+    background-repeat: no-repeat;
+    background-position: 100% 60px;
+
+    &__wrapper-title-image {
+      display: flex;
+      justify-content: space-between;
+      height: 320px;
+      margin-bottom: 128px;
+    }
+
+    &__wrapper-title {
+      padding-top: 20px;
+    }
+
+    &__title {
+      font-size: 1.857rem;
+    }
+
+    &__button {
+      margin: 0;
+    }
+
+    &-group {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+
+      &__item {
+        width: 204px;
+      }
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .comprehensive-training {
+    background-image: url(../../images/fotos/Shape1dt.png);
+    background-size: 100% 526px;
+    background-repeat: no-repeat;
+
+    &__title {
+      margin: 0 0 30px 0;
+      font-size: 3.429rem;
+      line-height: 4.143rem;
+      font-weight: 800;
+    }
+
+    &__paragraph {
+      margin: 0 0 66px 0;
+      font-size: 1.286rem;
+      line-height: 1.857rem;
+      font-weight: 700;
+    }
+
+    &__paragraph > br {
+      display: none;
+    }
+
+    &__button {
+      font-size: 0.8571rem;
+      height: 68px;
+      padding: 0 18px;
+      letter-spacing: 2px;
+    }
+
+    &__wrapper-title-image {
+      height: 586px;
+    }
+
+    &-group {
+      &__item-svg {
+        width: 44px;
+        height: 46px;
+      }
+
+      &__item-svg--wrapper {
+        flex: 0 0 99px;
+        height: 103px;
+        margin-right: 12px;
+
+        &::before,
+        &::after {
+          height: 12px;
+        }
+      }
+
+      &__item {
+        position: relative;
+        width: 300px;
+      }
+
+      &__item-text {
+        position: absolute;
+        left: 82px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .comprehensive-training {
+    background-image: url(../../images/fotos/Shape1dt.png);
+    background-size: 100% 556px;
+    background-repeat: no-repeat;
+  }
+}

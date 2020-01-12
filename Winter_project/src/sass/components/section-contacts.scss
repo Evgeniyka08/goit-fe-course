@@ -1,0 +1,125 @@
+.contacts {
+  padding: 34px 0 16px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__phone {
+    display: block;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 28px;
+    font-size: 1.286rem;
+    line-height: 2.643rem;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+
+    &::before {
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      bottom: 5px;
+      content: '';
+      background-image: url(../../images/icons/svg/noun_call_2543948.svg);
+      width: 24px;
+      height: 24px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__image {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contacts {
+    &__phone {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts {
+    padding: 34px 0;
+
+    &__wrapper {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+    }
+
+    &__phone {
+      margin-right: 62px;
+      order: 1;
+    }
+
+    &__image {
+      margin-bottom: 0;
+      order: 2;
+    }
+
+    .contacts-site-logo {
+      margin-right: 82px;
+      order: 0;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .contacts {
+    padding: 34px 0;
+
+    &__wrapper {
+      justify-content: flex-start;
+    }
+
+    &__phone {
+      position: relative;
+      padding-left: 46px;
+      margin: 0 62px 0 0;
+      order: 1;
+      font-size: 1.929rem;
+
+      & ::before {
+        position: absolute;
+        background-image: url(../../images/icons/svg/noun_call_2543948.svg);
+        width: 32px;
+        height: 32px;
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    &__image {
+      margin-bottom: 0;
+      order: 2;
+    }
+
+    .contacts-site-logo {
+      margin-right: 258px;
+      order: 0;
+    }
+  }
+}
+
+@media (min-width: 1680px) {
+  .contacts {
+    &__phone {
+      margin: 0 62px 0 0;
+      font-size: 1.588rem;
+    }
+    .contacts-site-logo {
+      margin-right: 312px;
+    }
+  }
+}

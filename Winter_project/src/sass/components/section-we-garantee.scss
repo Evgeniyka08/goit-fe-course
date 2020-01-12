@@ -1,0 +1,125 @@
+.we-guarantee {
+  background-image: url(../../images/fotos/bg-grey-mob.png);
+  background-repeat: repeat-x;
+  background-position: 100% -25%;
+  background-size: 768px 650px;
+  text-align: center;
+
+  &__title {
+    margin: 0 0 60px 0;
+    font-size: 1.429rem;
+    line-height: 1.2;
+    font-weight: 800;
+  }
+
+  &__list {
+    @extend %list;
+    padding-left: 20px;
+  }
+
+  &__item {
+    display: block;
+    position: relative;
+    font-size: 0.7857rem;
+    line-height: 1.429rem;
+    font-weight: 500;
+    text-align: left;
+    padding-left: 36px;
+    padding-bottom: 22px;
+
+    &::before {
+      position: absolute;
+      top: 3px;
+      left: 5px;
+      content: '';
+      width: 1px;
+      height: 100%;
+      border-width: 1px;
+      border-color: #bababa;
+      border-style: dashed;
+    }
+
+    &:last-child::before {
+      content: none;
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+      height: 18px;
+      width: 13px;
+      background-image: url(../../images/icons/fire.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  &__text > br {
+    display: none;
+  }
+
+  &--orange {
+    color: $primary-orange-color;
+  }
+}
+
+@media (min-width: 768px) {
+  .we-guarantee {
+    background-size: 100% 750px;
+    background-position: 100% -18%;
+
+    &__title {
+      margin: 0 0 70px 0;
+      font-size: 1.857rem;
+      line-height: 1.2;
+      font-weight: 800;
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .we-guarantee {
+    background-position: 100% -36%;
+
+    &__title {
+      margin: 0 0 80px 0;
+      font-size: 3rem;
+      line-height: 1.2;
+      font-weight: 800;
+    }
+
+    &__list {
+      padding-left: 116px;
+    }
+
+    &__item {
+      font-size: 1.286rem;
+      line-height: 2.071rem;
+      font-weight: 500;
+      text-align: left;
+      padding-left: 50px;
+      padding-bottom: 38px;
+
+      &::after {
+        position: absolute;
+        top: 0;
+        left: -4px;
+        content: '';
+        height: 27px;
+        width: 20px;
+        background-image: url(../images/icons/fire.png);
+        background-size: contain;
+      }
+    }
+
+    &__text > br {
+      display: inline;
+    }
+  }
+}
+
+@media (min-width: 1680px) {
+  .we-guarantee {
+    background-position: 100% -56%;
+  }
+}

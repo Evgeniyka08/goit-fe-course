@@ -1,0 +1,20 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+@import 'helpers/variables.scss';
+@import 'helpers/placeholders.scss';
+@import 'normalize.scss';
+@import 'base.scss';
+@import 'components/site-header.scss';
+@import 'components/section-comprehensive-training.scss';
+@import 'components/section-main-problems.scss';
+@import 'components/section-how-we-do-this.scss';
+@import 'components/section-our-program.scss';
+@import 'components/section-why-we.scss';
+@import 'components/section-teacher.scss';
+@import 'components/section-we-garantee.scss';
+@import 'components/section-reviews.scss';
+@import 'components/section-registration-form.scss';
+@import 'components/section-contacts.scss';
+@import 'components/site-footer.scss';
+@import 'media.scss';

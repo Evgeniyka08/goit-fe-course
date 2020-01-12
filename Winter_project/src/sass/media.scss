@@ -1,0 +1,27 @@
+@media (min-width: 320px) {
+  .container {
+    width: 280px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 690px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    width: 1210px;
+  }
+}
+
+@media (min-width: 1680px) {
+  html {
+    font-size: 17px;
+  }
+
+  .container {
+    width: 1346px;
+  }
+}

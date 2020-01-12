@@ -1,0 +1,240 @@
+.teacher {
+  margin-bottom: 50px;
+
+  &__title {
+    margin: 0 0 24px 0;
+    margin-bottom: 20px;
+    font-size: 1.429rem;
+    line-height: 2.143rem;
+    font-weight: 800;
+  }
+
+  &__img {
+    display: block;
+    padding-bottom: 20px;
+  }
+
+  &__name {
+    display: block;
+    font-size: 1.143rem;
+    line-height: 2.071rem;
+    font-weight: 800;
+    padding-bottom: 18px;
+
+    &::after {
+      display: block;
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: rgb(133, 133, 133);
+    }
+  }
+
+  &__list {
+    @extend %list;
+    font-size: 0.9286rem;
+    line-height: 1.2;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 16px;
+
+    &::after {
+      bottom: 0;
+      left: 17px;
+      position: absolute;
+      display: inline-block;
+      content: '';
+      background-color: $primary-orange-color;
+      padding-right: 15px;
+      width: 25px;
+      height: 2px;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+    padding-bottom: 16px;
+    padding-left: 34px;
+    position: relative;
+
+    &::before {
+      top: 0;
+      left: 0;
+      position: absolute;
+      display: inline-block;
+      content: '';
+      width: 16px;
+      height: 12px;
+      padding-right: 15px;
+      background-image: url(../../images/icons/icon-check.png);
+    }
+  }
+
+  &__text {
+    margin: 0rem;
+    font-size: 0.7857rem;
+    line-height: 1.429rem;
+    font-weight: 400;
+    color: $secondary-grey-color;
+    padding-left: 14px;
+    padding-bottom: 16px;
+  }
+
+  &__link {
+    margin: 0rem;
+    padding-left: 14px;
+    font-size: 0.7857rem;
+    line-height: 1.429rem;
+    font-weight: 400;
+    color: $primary-orange-color;
+  }
+}
+
+@media (min-width: 768px) {
+  .teacher {
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__title {
+      width: 100%;
+      padding-bottom: 24px;
+      font-size: 1.857rem;
+      line-height: 1.2;
+    }
+
+    &__img {
+      padding-bottom: 0;
+    }
+
+    &__wrapper-data {
+      width: 400px;
+    }
+
+    &__name {
+      line-height: 1;
+
+      &::after {
+        margin-top: 16px;
+      }
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .teacher {
+    margin-bottom: 90px;
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__title {
+      width: 100%;
+      margin-bottom: 58px;
+      font-size: 3rem;
+      line-height: 4.429rem;
+    }
+
+    &__wrapper-data {
+      width: 633px;
+    }
+
+    &__name {
+      font-size: 2.071rem;
+      line-height: 2.071rem;
+
+      &::after {
+        width: 90%;
+      }
+    }
+
+    &__list {
+      margin-bottom: 32px;
+
+      &::after {
+        left: 0;
+      }
+    }
+
+    &__item {
+      display: block;
+      font-size: 1.143rem;
+      font-weight: 600;
+      padding-bottom: 30px;
+      width: 445px;
+      padding-left: 34px;
+
+      &::before {
+        width: 20px;
+        height: 16px;
+        background-size: cover;
+        padding-right: 20px;
+      }
+    }
+
+    &__item > br {
+      display: none;
+    }
+
+    &__text {
+      font-size: 1.143rem;
+      line-height: 2.071rem;
+      font-weight: 400;
+      color: $secondary-grey-color;
+      padding-left: 0;
+      margin-bottom: 30px;
+    }
+
+    &__link {
+      padding: 0;
+      font-size: 1.143rem;
+      line-height: 2.071rem;
+    }
+  }
+}
+
+@media (min-width: 1680px) {
+  .teacher {
+    &__wrapper-data {
+      width: 750px;
+    }
+
+    &__name {
+      font-size: 1.706rem;
+      line-height: 1.706rem;
+    }
+
+    &__item {
+      display: block;
+      font-size: 1.143rem;
+      font-weight: 600;
+      width: 500px;
+
+      &::before {
+        width: 20px;
+        height: 16px;
+        background-size: cover;
+        padding-right: 20px;
+      }
+    }
+
+    &__text {
+      font-size: 0.9412rem;
+      line-height: 1.706rem;
+      font-weight: 400;
+      color: $secondary-grey-color;
+      padding-left: 0;
+      margin-bottom: 20px;
+    }
+
+    &__link {
+      padding: 0;
+      font-size: 0.9412rem;
+      line-height: 1.706rem;
+    }
+  }
+}

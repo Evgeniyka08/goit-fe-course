@@ -1,0 +1,170 @@
+.registration-form {
+  background-image: url(../../images/fotos/BG-pic-mob.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 52px 0 58px;
+
+  &__wrapper {
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0 0 20px 0;
+    line-height: 1.857rem;
+    font-weight: 800;
+    color: $primary-white-color;
+  }
+
+  &__text {
+    display: block;
+    margin: 0 0 26px 0;
+    font-size: 0.7857rem;
+    line-height: 1.857rem;
+    font-weight: 600;
+    color: $primary-white-color;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & input {
+      border: 1px solid white;
+      background: transparent;
+      margin-bottom: 20px;
+      width: 278px;
+      height: 48px;
+      font-size: 0.9286rem;
+      font-weight: 600;
+      line-height: 2.643rem;
+      color: white;
+      text-indent: 1rem;
+
+      &::placeholder {
+        color: white;
+      }
+
+      &:last-of-type {
+        margin-bottom: 54px;
+      }
+    }
+
+    & button {
+      border: 2px solid $primary-orange-color;
+      padding: 15px 0;
+      outline: none;
+      text-transform: uppercase;
+      /*  width: 246px; 
+      height: 44px; */
+      font-size: 0.7857rem;
+      font-weight: 700;
+      color: $primary-white-color;
+      background-color: $primary-orange-color;
+      cursor: pointer;
+      transition: opasity 0.2s linear;
+    }
+  }
+
+  &--orange {
+    color: $primary-orange-color;
+  }
+
+  &--orange > br {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .registration-form {
+    padding: 60px 0;
+    background-image: url(../../images/fotos/BG-pic-tab.png);
+
+    &__title {
+      display: inline-block;
+      margin: 0 auto 30px;
+      font-size: 1.571rem;
+      line-height: 2.714rem;
+      width: 574px;
+    }
+
+    &__text {
+      display: inline-block;
+      padding-bottom: 42px;
+      width: 458px;
+      margin: 0 auto;
+      font-size: 1.071rem;
+      line-height: 1.429rem;
+    }
+
+    &--orange + br {
+      display: none;
+    }
+
+    &--orange > br {
+      display: inline;
+    }
+
+    &__form {
+      & input {
+        width: 402px;
+        height: 48px;
+      }
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .registration-form {
+    padding: 86px 0;
+    background-image: url(../../images/fotos/BG-pic-dt.png);
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
+    &__title {
+      margin: 0 auto 30px;
+      font-size: 2.643rem;
+      line-height: 3.571rem;
+      width: 936px;
+    }
+
+    &__text {
+      padding-bottom: 50px;
+      width: 548px;
+      font-size: 1.286rem;
+      line-height: 1.714rem;
+    }
+
+    &__form {
+      & input {
+        width: 602px;
+        height: 72px;
+        font-size: 1.429rem;
+        line-height: 2.643rem;
+        text-indent: 30px;
+      }
+
+      & button {
+        font-size: 0.8571rem;
+        height: 68px;
+        padding: 0 18px;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1680px) {
+  .registration-form {
+    &__title {
+      width: 1054px;
+    }
+
+    &__text {
+      width: 580px;
+    }
+  }
+}
